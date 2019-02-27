@@ -1,0 +1,8 @@
+<view class='sites'>
+  <view class='province-list' wx:for='{{sitesProvice}}' wx:for-item="item">
+      <view class='provice'>{{item.province}}</view>
+      <view class='city'  wx:for='{{item.network}}' wx:for-item="key">
+          <view class='city-site'>{{key}}</view>
+      </view>
+  </view>
+</view>

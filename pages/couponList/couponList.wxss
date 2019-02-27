@@ -1,0 +1,183 @@
+.mall-banner {
+  position: relative;
+  height: 220px;
+}
+
+.mall-banner image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mall-balance {
+  font-size: 10px;
+  color: #fff;
+}
+
+.mall-balance text {
+  font-size: 28px;
+  font-weight: 700;
+}
+ .mall-coupon-title view:nth-child(1) {
+  background: linear-gradient(to right, #fd130a, #fc8725);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.mall-coupon-title {
+  height: 30px;
+  /* background-color: red; */
+  position: relative;
+  font-size: 14px;
+}
+
+.more {
+  position: absolute;
+  right: 10px;
+  width: 70px;
+  font-size: 11px;
+  height: 30px;
+  line-height: 30px;
+  color: #808080;
+}
+
+.more image {
+  width: 15px;
+  height: 15px;
+  right: 0;
+  margin-left: 10px;
+}
+
+
+.list .item {
+  display: flex;
+  height: 84px;
+  justify-content: space-between;
+  margin: 10px 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+ .list .item .up-sj, .list .item .down-sj {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 76.5%;
+  border-radius: 50%;
+  background-color:rgba(245,245,245,1);
+  /* background-color:red; */
+}
+ .list .item .up-sj {
+  top:-7px;
+}
+ .list .item .down-sj {
+  bottom:-7px;
+}
+.list .item view:nth-child(1) {
+  width: 23%;
+}
+
+.list .item .detail {
+  width: 55%;
+}
+
+.detail {
+  /* padding: 12px 0 0 5px; */
+  padding-top: 5px;
+}
+
+.detail view:nth-child(1) {
+  color: #333;
+  font-size: 14px;
+}
+
+.detail view:nth-child(2) {
+  color: #b3b3b3;
+  font-size: 11px;
+}
+
+.detail view:nth-child(3) {
+  color: #e73e3f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.list .item view:nth-child(2) view {
+  width: 100%;
+}
+
+.list .item .buy-btn {
+  width: 22%;
+}
+
+.list .buy-btn view.btn {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+.sub-title {
+  margin: 8px 0 13px 0;
+}
+.list .item image {
+  width: 100%;
+  height: 100%;
+}
+.pic {
+  padding: 5px;
+  box-sizing: border-box; 
+}
+
+/* 计时器部分 */
+
+.interval {
+  left: 42%;
+  top: 20px;
+}
+
+.time-inter, .round-circle {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffebc8;
+  left: 44%;
+  top: 65%;
+  border: 1px solid #ffebc8;
+  border-radius: 50%;
+}
+
+.round-circle {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 44%;
+  /* transform: translateX(-100%); */
+}
+
+.small-circle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #ffebc8;
+}
+
+.small-circle image {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

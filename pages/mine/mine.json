@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "道音 • 我的",
+  "usingComponents": {
+    "my-countdown": "/pages/components/timeInter/timeInter"
+  }
+}

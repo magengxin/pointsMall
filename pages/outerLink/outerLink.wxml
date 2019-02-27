@@ -1,0 +1,2 @@
+
+  <web-view src="{{outerLink}}"></web-view>

@@ -1,0 +1,418 @@
+/* 新年版本样式 */
+
+.goods-price {
+  width: 134px;
+  position: absolute;
+  border-radius: 18.5px;
+  font-size: 18px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(255, 231, 178, 1);
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 39px;
+}
+
+.coin {
+  width: 32px;
+  height: 32px;
+}
+
+.coin image {
+  position: static;
+  width: 100%;
+  height: 100%;
+  margin-top: -3px;
+}
+
+.hide {
+  display: none;
+}
+
+.banner-top {
+  height: 110px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.index-banner {
+  background: linear-gradient(to right, rgba(37, 32, 28, 1), rgba(135, 117, 90, 1), rgba(37, 32, 28, 1));
+  padding-bottom: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.signin {
+  height: 22px;
+  line-height: 22px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.daysign {
+  /* background: linear-gradient(to right, #d6a976, #bc8952); */
+  padding: 8px 2px 8px 8px;
+  box-sizing: border-box;
+  height: 22px;
+  line-height: 22px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  right: 3px;
+}
+
+.daysign image {
+  width: 40px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.daysign text {
+  margin-left: 4px;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.check {
+  width: 50%;
+  height: 22px;
+  margin-left: 4px;
+  padding: 0 10px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 10px;
+  white-space: nowrap;
+  background: linear-gradient(to right, rgba(83, 79, 75, 1), rgba(160, 145, 124, 1));
+}
+
+.check view {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(254, 217, 174, 1);
+}
+
+.dyb {
+  height: 110px;
+}
+
+.dyb-title  text {
+  text-align: center;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 224, 175, 1);
+}
+
+.money {
+  height: 100%;
+}
+
+.money view:nth-child(1) {
+  position: relative;
+  top: 8px;
+}
+
+.money view:nth-child(1) text {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 224, 175, 1);
+}
+
+.money view:nth-child(2) text {
+  font-size: 40px;
+  font-family: Impact;
+  font-weight: 700;
+  color: rgba(255, 224, 175, 1);
+  background: linear-gradient(to bottom, rgba(255, 225, 176, 1) 0%, rgba(230, 176, 106, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coin {
+  width: 30px;
+  height: 100%;
+  margin-right: 6px;
+}
+
+.coin image {
+  width: 100%;
+  height: 30px;
+  margin-top: -10px;
+}
+
+.spring {
+  height: 305px;
+  background-image: url(https://daoyin.datuhongan.com/Upload/20190124/index.png);
+  background-size: cover;
+  position: relative;
+  top: -3px;
+}
+
+/* 新列表 */
+
+.listitem {
+  margin-top: 28px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 48%;
+  height: 250px;
+  margin-top: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-image: url(http://daoyin.datuhongan.com/Upload/62022.png);
+  background-size: cover;
+  position: relative;
+}
+
+.item-coupon {
+  background-image: url(https://daoyin.datuhongan.com/Upload/20190124/red_bg.png);
+  background-size: 100% 100%;
+}
+
+.item .real {
+  position: absolute;
+  width: 15px;
+  height: 66px;
+  top: 0;
+  left: 0;
+}
+
+.item .surpls {
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  background-color: #f7ece6;
+  padding: 1px 6px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.item .goods-img {
+  width: 100%;
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.item .goods-img image {
+  width: 143px;
+  height: 100%;
+}
+
+.item .goods-name, .item .goods-price {
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.item .goods-name {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-top: 3px;
+  padding-bottom: 2px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.item .goods-price {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+}
+
+.real-price {
+  font-size: 15px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(228, 8, 8, 1);
+  height: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.dy-price {
+  background-image: url(http://daoyin.datuhongan.com/Upload/61957.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  height: 18px;
+  line-height: 18px;
+  width: 70%;
+  margin-left: 2px;
+}
+
+.dy-price view {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.dy-price view:nth-child(1), .dy-price view:nth-child(2) {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dy-price view:nth-child(2) {
+  font-size: 10px;
+}
+
+.dy-price view:nth-child(1) image {
+  margin-right: 2px;
+}
+
+.price-coin {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+}
+
+/* 新列表end */
+
+/* 弹框slot样式 */
+
+.m-wintip view {
+  text-align: center;
+}
+
+.m-tips {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 4px;
+}
+
+.m-wintip {
+  margin-top: 20px;
+}
+
+.m-close {
+  position: absolute;
+  top: 20%;
+}
+
+.m-close image {
+  width: 29px;
+  height: 29px;
+}
+
+.congratulations {
+  margin-top: 35px;
+}
+
+.m-money {
+  height: 23px;
+  line-height: 23px;
+}
+
+.congratulations text, .m-money text {
+  font-size: 22px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(139, 66, 255, 1);
+  background: linear-gradient(45deg, rgba(122, 73, 47, 1) 0%, rgba(201, 125, 59, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.m-tips text {
+  font-size: 10px;
+  font-family: SourceHanSansCN-Regular;
+  font-weight: 400;
+  color: rgba(135, 89, 64, 1);
+}
+
+.m-coin {
+  width: 100%;
+  height: 50px;
+  margin-top: 24px;
+}
+
+.m-coin image {
+  height: 100%;
+  width: 50px;
+}
+
+.m-use {
+  width: 130px;
+  height: 34px;
+  line-height: 34px;
+  background: linear-gradient(90deg, rgba(219, 178, 146, 1) 0%, rgba(248, 223, 196, 1) 100%);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 17px;
+  margin: 52px auto;
+  font-size: 13px;
+  font-family: PingFangSC-Regular;
+  color: rgba(120, 72, 47, 1);
+}
+
+/* 弹框slot样式end */
+
+.rulers {
+  font-size: 10px;
+  color: rgba(255, 224, 175, 1);
+  background: linear-gradient(to bottom, rgba(255, 225, 176, 1) 0%, rgba(230, 176, 106, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 2px;
+  text-align: right;
+  position: absolute;
+  bottom: 2px;
+  right: -47px;
+}
+
+.balance {
+  position: relative;
+  height: 48px;
+}
+.signbtn {
+  position: absolute;
+  width: 70px;
+  height: 22px;
+  bottom: 11px;
+  right: 0;
+}
+/* 新年版本样式end */

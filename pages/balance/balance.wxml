@@ -1,0 +1,50 @@
+<view class='container'>
+  <image src='../../images/bal.png' mode='widthFix' style='width:100%'></image>
+</view>
+<view class='container' style='display:none'>
+  <view class='balance-banner'>
+  <view class='nickname'>
+    <!-- <view>用户昵称</view> -->
+  </view>
+    <view class='income'>
+      <view>￥100</view>
+      <view>支出</view>
+    </view>
+    <view class='line'>
+    </view>
+    <view class='used'>
+      <view>￥200</view>
+      <view>收入</view>
+    </view>
+  </view>
+
+  <view class='use-order'>
+    <view class='order-item'>
+        <view>
+          <view class='use-name'>同程优惠券</view>
+          <view class='use-date'>2018-2-23</view>
+        </view>
+        <view class='use-price'>
+          <text>10</text>
+        </view>
+    </view>
+    <view class='order-item'>
+        <view>
+          <view class='use-name'>同程优惠券</view>
+          <view class='use-date'>2018-2-23</view>
+        </view>
+        <view class='use-price'>
+          <text>10</text>
+        </view>
+    </view>
+    <view class='order-item'>
+        <view>
+          <view class='use-name'>同程优惠券</view>
+          <view class='use-date'>2018-2-23</view>
+        </view>
+        <view class='use-price'>
+          <text>10</text>
+        </view>
+    </view>
+  </view>
+</view>

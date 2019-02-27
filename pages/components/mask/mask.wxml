@@ -1,0 +1,12 @@
+<!-- 中奖提示弹框组件 -->
+<view>
+
+  <view class='mask' catchtouchmove='preventScroll'>
+  <view class='xy-center m-close' bindtap="closeMask" >
+      <image src='http://20190102-dtha-miniprogram-images.oss-cn-shanghai.aliyuncs.com/dthaImgs/closemask.png'></image>
+    </view>
+    <view class='mask-container xy-center'>
+      <slot></slot>
+    </view>
+  </view>
+</view>

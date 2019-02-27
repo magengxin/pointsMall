@@ -1,0 +1,23 @@
+<view class='sharingPoints'>
+    <image class='sharingPoints-bg' src='https://daoyin.datuhongan.com/Upload/20190124/sharingPoint.png'></image>
+    <image class='thumb x-center' src='https://daoyin.datuhongan.com/Upload/20190124/thumb.png'></image>
+    <view class='total x-center' wx:if="{{type==1}}">
+      <view>你已获得<text>{{num}}</text>个赞</view>
+      <view>共获得{{value}}金币</view>
+    </view>
+    <view class='effect x-center' wx:if="{{type!=1}}">
+    <image src='../../images/many.png' class='many'mode="widthFix"></image>
+      <view class='do'>为他点赞成功!</view>
+      <view class='getnum'>你已获得{{value}}金币,赶快去商城使用吧!</view>
+    </view>
+    <!-- <text class='rule-description'>进入商城</text> -->
+    <!-- <view class="rule-description" bindtap='goMall'>
+      <text>进入商城</text>
+      <image src='../../images/redarrow.png'></image>
+    </view> -->
+    <image class='share-bg x-center' src='../../images/share-bg.png'></image>
+    <button class='share-btn share-bg x-center' open-type='share'  wx:if="{{type==1}}">去分享</button>
+    <button class='share-btn share-bg x-center' bindtap='goMallIndex'  wx:if="{{type!=1}}">去商城</button>
+    <!-- <button class='share-btn  x-center' open-type='share'>分享----</button> -->
+    <!-- <text class='share x-center'></text> -->
+</view>

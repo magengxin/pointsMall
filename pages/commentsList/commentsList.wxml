@@ -1,0 +1,24 @@
+<view class="all-coments">
+  <view class='com-item' wx:for="{{commentList}}" wx:for-item="item" wx:key="item.id">
+    <view class='com-person'>
+      <view class='useravatar'>
+        <image src='{{item.avatarUrl}}' mode='widthFix'></image>
+      </view>
+      <view class='username'>{{item.nickName}}</view>
+    </view>
+    <view class='com-time'>
+      <text>{{item.created_at}}</text>
+    </view>
+    <view class='com-content'>
+       {{item.content}}
+    </view>
+    <view class='com-imgs'>
+      <view wx:for="{{item.newImgs}}" bindtap='previewCommentImage' wx:for-item="img" wx:key="img" data-imgUrl="{{img}}">
+        <image src='{{img}}'></image>
+      </view>
+    </view>
+    <view class="com-official" wx:if="{{item.reply != ''}}">
+      <text class='official'>官方回复:</text> <text>{{item.reply}} </text>
+    </view>
+  </view>
+</view>

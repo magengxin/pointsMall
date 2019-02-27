@@ -1,0 +1,47 @@
+.ruler-container {
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, .5);
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ruler-content {
+  width: 280px;
+  /* height: 230px; */
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  right: 2px;
+}
+.coin {
+  width: 15px;
+  height: 15px;
+  margin-left: 4px;
+}
+.ruler {
+  color: #BB8A56;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ruler-item {
+  font-size: 13px;
+  color: #aaa;
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+}

@@ -1,0 +1,56 @@
+<view class='mall-container'>
+  <view class='sign'>
+    <view class='sign-bg'></view>
+    <view class='sign-day x-center'>
+      <view class='everyday'>
+        <text>每日签到</text>
+      </view>
+      <view class='signmore'>
+        <text>连续签到积分越多呦~</text>
+      </view>
+      <view class='dosign'>
+        <view class='slide-container'>
+        <view class='sign-line y-flex-center'>
+        <image src='../../images/signline.png'></image>
+        </view>
+          <view class='days' wx:for="{{signArr}}" wx:for-item="item" wx:key="item">
+            <view data-count="{{item}}" wx:if="{{item.day > continueDays }}">+{{item.points}}</view>
+            <view style='width:25px;height:25px' wx:if="{{item.day <= continueDays}}"> <image src='../../images/checked.png' style='width:25px;height:25px'></image> </view>
+            <text>{{item.day}}天</text>
+          </view>
+        </view>
+      </view>
+      <view class='sign-btn'>
+        <button bindtap='doSign'>签到</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 所有商品列表 -->
+  <view class='mall-coupon'>
+    <view class='mall-coupon-title x-center'>
+      <view class='recommend xy-center'>推荐</view>
+    </view>
+    <view class='mall-coupon-list'>
+      <view class="mall-coupon-listitem">
+        <view class='list-left' wx:for="{{goodsList}}" wx:for-item="item" wx:key="item.gid" bindtap='viewGoodsDetail' data-info="{{item}}" data-gid="{{item.gid}}">
+          <view class="{{item.type ==1 ? 'goods-pic' : 'goods-coupon'}}  xy-flex-center" catchtap='viewGoodsDetail' data-gid="{{item.gid}}">
+            <image src='{{item.thumb_img}}' style='width:150px;height:150px' mode='widthFix'></image>
+          </view>
+          <view class='goods-price x-center'>
+            <text>￥{{item.value}}</text>
+          </view>
+          <view class='goods-stock'>
+            <text>仅剩:{{item.stock}}件</text>
+          </view>
+          <view class='goods-name xy-flex-center' catchtap='viewGoodsDetail' data-gid="{{item.gid}}">
+            <text>{{item.goods_name}}</text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,52 @@
+<view>
+<!-- 商品信息 -->
+  <view class='top'>
+  <view class='top-goods'>
+     <view class='pic'>
+      <image src='{{orderInfos.goods.thumb_img}}' mode='widthFix'></image>
+      <!-- <image src='../../images/1.png'></image> -->
+    </view>
+    <view class='loginfo'>
+      <view>
+         <view class='company'>
+        <text>物流公司:</text>
+        <text>{{orderInfos.logistics_company}}</text>
+      </view>
+      <view class='no'>
+        <text>物流单号:</text>
+        <text>{{orderInfos.logistics_no}}</text>
+        <text class='btn' bindtap='copyNo' wx:if="{{orderInfos.logistics_no != ''}}">复制</text>
+      </view>
+      </view>
+    </view>
+  </view>
+ 
+  </view>
+  <!-- 商品end -->
+  <!-- 物流信息 -->
+  <view class='bottom-log'>
+    <view class='detail'>
+       <view class='title'>物流信息</view>
+       <view class='step'>
+          <view wx:if="{{logs.length <=0}}" class="noLogs">暂无物流信息~</view>
+          <view class='info' wx:if="{{logs.length >0}}" wx:for="{{logs}}" wx:for-item="item" wx:for-index="idx" wx:key="item">
+            <view class="left">
+              <view>
+                <!-- <text class='day'>早上</text> -->
+              </view>
+              <view>
+                <text class='times'>{{item.time}}</text>
+              </view>
+            </view>
+            <view class='center'>
+              <image src="../../images/c1.png" mode="widthFix"></image>
+            </view>
+            <view class="right">
+              <view><text class='process'>{{item.ftime}}</text></view>
+              <view><text class='arrive'>{{item.context}}</text></view>
+            </view>
+          </view>
+       </view>
+    </view>
+  </view>
+</view>

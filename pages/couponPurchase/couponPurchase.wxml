@@ -1,0 +1,20 @@
+<view class='coupon-purchase'>
+    <view class='couponmsg-bgc'>
+        <!-- 头部 -->
+        <image class='coupon-title x-center' src='../../images/couponTitleBg.png'></image>
+        <text class='coupon-title-write x-center'>{{title}}</text>
+        <!-- 优惠券列表 -->
+        <view class='list-coupon' wx:for="{{couponList}}" wx:for-item="item" data-goodsId='{{item.gid}}' bindtap='exchangeFor'>
+            <image class='list-coupon-bg x-cneter' src='../../images/couponListBg.png'></image>
+            <image class='list-coupon-logo y-center' src='{{item.thumb_img}}'></image>
+            <text class='list-coupon-name commonTextOver'>{{item.goods_name}}</text>
+            <text class='subheading commonTextOver'>{{item.subtitle}}</text>
+            <text class='list-coupon-value'>¥{{item.value}}</text>
+            <text class='coupon-num'>仅剩{{item.stock}}件</text>
+            <text class='exchange'>换取</text>
+        </view> 
+        <!-- 底部到底 -->
+        <view class='foot-notmessage'>{{tip}}</view>
+    </view>  
+  
+</view> 

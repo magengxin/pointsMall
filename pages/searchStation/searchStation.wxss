@@ -1,0 +1,267 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.banner {
+  height: 160px;
+  background-image: url(http://daoyin.datuhongan.com/Upload/61847.png);
+  background-size: cover;
+}
+
+.sear-container {
+  margin: 15px;
+  border-bottom: 1px solid #f6f7f9;
+}
+
+.tablist {
+  margin: 0 15px;
+}
+
+.inp {
+  height: 38px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f6f7f9;
+}
+
+.inp input {
+  width: 82%;
+  padding-left: 5px;
+}
+
+.inp .btn {
+  width: 18%;
+  height: 38px;
+  font-size: 13px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(to right, #f1c69b, #c48e59);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.address text {
+  font-size: 13px;
+  font-family: PingFang-SC-Regular;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+}
+
+.device {
+  margin-top: 4px;
+}
+
+.example {
+  font-size: 11px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(128, 128, 128, 1);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.allstation {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.allstation text {
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(187, 138, 86, 1);
+}
+
+/* .cate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+} */
+
+.cate view {
+  font-size: 13px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.cate .active {
+  color: #bc8a57;
+  border-bottom: 2px solid #bc8a57;
+}
+
+.listitem {
+  margin-top: 6px;
+  padding: 6px;
+  box-sizing: border-box;
+  /* height: 100px; */
+  background: linear-gradient(90deg, rgba(76, 76, 76, 1) 0%, rgba(48, 48, 48, 1) 100%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bgnull {
+  background: #fff;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.item {
+  /* width: 175px; */
+  width: 48%;
+  height: 255px;
+  margin-top: 8px;
+  /* background-color: red; */
+  border-radius: 6px;
+  overflow: hidden;
+  background-image: url(http://daoyin.datuhongan.com/Upload/62022.png);
+  background-size: cover;
+  position: relative;
+}
+
+.item .real {
+  position: absolute;
+  width: 15px;
+  height: 66px;
+  top: 0;
+  left: 0;
+}
+
+.item .surpls {
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  background-color: #f7ece6;
+  padding: 1px 6px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.item .goods-img {
+  width: 100%;
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.item .goods-img image {
+  width: 143px;
+  height: 100%;
+}
+
+.item .goods-name, .item .goods-price {
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.item .goods-name {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  word-break: break-all;
+  display: -webkit-box;
+  padding-bottom: 2px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.item .goods-price {
+  display: flex;
+  /* justify-content: space-between; */
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  /* margin-left: 2px; */
+}
+
+.item .goods-price view {
+  /* flex: 1; *//* text-align: center; */
+}
+
+.real-price {
+  font-size: 13px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(228, 8, 8, 1);
+  /* width: 30%; */
+  text-align: left;
+}
+
+.dy-price {
+  background-image: url(http://daoyin.datuhongan.com/Upload/61957.png);
+  background-size: 100% 100%;
+  /* padding: 0 3px; */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-left: 2px;
+}
+
+.dy-price view {
+  flex: 1;
+  text-align: center;
+  /* padding-left: 4px; */
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.price-coin {
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+
+/* 滚动条 */
+
+.scroll-view-item {
+  /* width: 40px; */
+  text-align: center;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.cate .scroll-view-item:nth-child(1) {
+  margin-left: 0;
+}
+
+/* 滚动条end */
+
+.nogoods {
+  height: 250px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 13px;
+}
+
+/* 关注 */
+
+official-account {
+  display: block;
+  width: 100%;
+}

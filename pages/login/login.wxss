@@ -1,0 +1,33 @@
+.login-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.logobg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.img {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+}
+.img image {
+  width: 186px;
+  height: 178px;
+}
+button {
+  width: 90%;
+   background: linear-gradient(to right, rgb(240, 192, 145) 5%, rgb(187, 128, 69) 95%);
+  color: #fff;
+}
+.login-btn {
+  margin-top: 0px;
+  position: absolute;
+  top: 70%;
+  width: 90%;
+}

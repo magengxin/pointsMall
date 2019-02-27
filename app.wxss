@@ -1,0 +1,72 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.container {
+  height: 100%;
+  background-color: rgba(245, 245, 245, 1);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; */
+}
+
+.x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.y-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.xy-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.x-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.y-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.xy-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-col {
+  color: #e73e3f;
+}
+
+.btn-bgcol {
+  background-color: #fd4534;
+}
+/* 单行溢出显示省略号 */
+.commonTextOver {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 多行溢出显示省略号 */
+.multiLineTextOver {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "道音 • 商品列表",
+  "usingComponents": {
+    "my-countdown": "/pages/components/timeInter/timeInter"
+  }
+}

@@ -1,0 +1,13 @@
+<!-- 倒计时 -->
+    <view class='time-inter'>
+      <view class='out-circle'>
+      <text>{{minutes}} </text>: <text>{{seconds}}</text>
+      </view>
+
+    </view>
+    <view class='round-circle' animation="{{animationData}}">
+      <view class='small-circle'>
+      </view>
+    </view>
+
+    <!-- 倒计时结束 -->

@@ -1,0 +1,20 @@
+<view class='find-sites'>
+  <view class='find-box'>
+      <input  placeholder='搜索站点' bindinput='inputVal' value="{{keyword}}"></input>
+      <view bindtap='sitesSearch'>查询</view>
+  </view>
+  <view class='find-result' wx:if="{{hasSites}}">
+      找到了<text class='find-result-num'> {{siteLength}} </text>个站点有道音设备
+  </view>
+  <view class='find-false' wx:if="{{!hasSites}}">未找到！站点暂未铺设</view> 
+  <view class='sites-msg' wx:if="{{hasSites}}">
+      <view class='sites-list' wx:for="{{sitesList}}" wx:for-item="item" wx:key="item">{{item}}</view>
+  </view> 
+  <view class='result-tips'>
+      <text wx:if="{{hasSites}}">终于等到你，好不容易咯！</text>
+      <text wx:if="{{hasSites}}">快来和我一起玩游戏，领大奖吧！</text>
+      <image class='happyImg' wx:if="{{hasSites}}" src='https://daoyin.datuhongan.com/Upload/20190124/hasstations.png'></image>
+      <image class='sadImg' wx:if="{{!hasSites}}" src='https://daoyin.datuhongan.com/Upload/20190124/nostation.png'></image>
+  </view>
+  
+</view>

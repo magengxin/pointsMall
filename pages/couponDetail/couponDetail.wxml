@@ -1,0 +1,46 @@
+<view class='container'>
+  <!-- 链接 -->
+  <view class='cou-link' wx:if="{{goodsType}}">
+    <view class='goods-info'>
+      <view class='goods-pic xy-flex-center'>
+        <image src='../../images/banner.png' mode='widthFix'></image>
+      </view>
+      <view class='goods-name'>
+        <text>{{couponInfo.goods_name}}</text>
+        <text>销量:{{couponInfo.sale_num}}</text>
+      </view>
+      <view class='goods-price'>
+        <view>
+          <text>剩余:{{couponInfo.stock}}</text> </view>
+        <view>
+          <text>￥{{couponInfo.value}}</text> </view>
+      </view>
+    </view>
+    <view class='qr-code'>
+      <view class='link-name'>
+        <text>优惠券链接:</text>
+      </view>
+      <view class='link-address'>
+        <text>{{couponInfo.link}}</text>
+      </view>
+      <view class='copy-btn' bindtap='copyLink'>复制链接</view>
+      <view class='tip'>*复制链接在浏览器端打开</view>
+    </view>
+  </view>
+  <!-- 链接end -->
+
+  <!-- 二维码 -->
+  <view class='code' wx:if="{{!goodsType}}" bindtap='previewQrCode'>
+    <image src='{{pageImg}}' mode='widthFix'></image>
+    <!-- <view class='goods-info'>
+      <view class='goods-pic xy-flex-center'>
+        <image src='../../images/banner.png' mode='widthFix'></image>
+      </view>
+    </view>
+    <view class='code-pic'>
+      <image src='../../images/logo.png' mode='widthFix'></image>
+    </view>
+    <view class='code-tip'><text>点击识别二维码,领取优惠券</text> </view> -->
+  </view> 
+  <!-- 二维码end -->
+</view>

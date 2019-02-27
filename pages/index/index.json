@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "道音 • 商城",
+  "usingComponents": {
+    "my-countdown": "/pages/components/timeInter/timeInter",
+    "my-help": "/pages/components/help/help",
+    "my-mask": "/pages/components/mask/mask",
+    "my-spring": "/pages/components/newUserMask/newUserMask",
+    "my-ruler": "/pages/components/ruler/ruler",
+    "my-comment": "/pages/components/comment/comment"
+  }
+}

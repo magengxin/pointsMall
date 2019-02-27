@@ -1,0 +1,179 @@
+@import '/pages/styles/goodsDetailscommentSwiper.wxss';
+.header {
+  /* background-color: cyan; */
+  height: 84px;
+  position: relative;
+}
+
+.mall-container {
+  background-color: #fff;
+}
+
+.header image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.countdown-container {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 33px;
+  top: 0;
+}
+
+.money {
+  position: absolute;
+  font-size: 11px;
+  width: 50%;
+  height: 70%;
+  /* background-color: yellowgreen; */
+  padding-left: 6px;
+  box-sizing: border-box;
+}
+
+.bal {
+  color: #fff2d5;
+}
+
+.bal text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.money .tip {
+  font-size: 10px;
+  /* margin-top: 8px; */
+  color: #ffebc8;
+}
+
+.goods-img {
+  position: relative;
+}
+
+.other-price {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 30px;
+  /* line-height: 30px; */
+  padding: 8px 0;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #f2d9df;
+}
+
+.other-price view {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.other-price view:nth-child(1) {
+  border-right: 1px solid #333;
+}
+
+.goods-img image {
+  vertical-align: top;
+}
+
+swiper-item {
+  width: 325px;
+  height: 325px;
+}
+
+.goods-info {
+  background-color: #fff;
+  padding: 12px 10px;
+  box-sizing: border-box;
+}
+
+.goods-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.goods-name text {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+}
+
+.goods-name .sale-num {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(170, 170, 170, 1);
+  width:20%;
+  text-align:right;
+}
+
+.goods-sale {
+  /* margin-top: 6px; */
+  padding: 2px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods-sale .goods-saled {
+  background: linear-gradient(to right, rgba(228, 159, 79, 0.829), #bc8952);
+  color: #fff;
+  padding: 2px 4px;
+  font-size: 10px;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+.goods-sale .goods-price {
+  font-size: 10px;
+  color: #f9373e;
+}
+
+.goods-sale .goods-price {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.goods-detail-img {
+  margin-top: 8px;
+  /* margin-bottom: 50px; */
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  /* height: 6000px; *//* max-height: auto; */
+}
+
+.goods-detail-img .img-item {
+  height: 100%;
+}
+
+.goods-detail-img image {
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.buy {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(to right, #f9ca8f, #bc8952);
+}
+
+.buy text {
+  font-size: 16px;
+  color: #fff;
+}

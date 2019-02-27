@@ -1,0 +1,56 @@
+<view class='container'>
+  <official-account></official-account>
+  <view class='banner'></view>
+  <view class='sear-container'>
+    <view class='search'>
+      <view class='inp'>
+        <input placeholder='我要去的省份/火车站/高铁站/机场' bindinput='bindKeyInput' placeholder-style='color:#C2C2C2;font-size:13px;padding-left:4px;' />
+        <view class='btn xy-flex-center' bindtap='searchStation'>查询</view>
+      </view>
+    </view>
+    <view class='device'>
+      <view class='address'>
+        <text>设备分布点 :</text>
+      </view>
+      <view class='example'>
+        <text>杭州火车东站/太原火车站/南京南站/合肥南站/宁波高铁站/济南火车站</text>
+      </view>
+      <view class='allstation'>
+        <view bindtap='viewAllStations'>
+          <text>查看全部站点</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='tablist'>
+    <view class="cate" style='overflow:hidden;white-space:nowrap;height:30px'>
+      <scroll-view scroll-x="true" bindscoll="bindScroll" scroll-into-view="">
+        <view class="scroll-view-item {{cate==item.id?'active': ''}}" bindtap='switchCate' wx:for="{{cateList}}" wx:for-item="item" wx:key='item.id' data-cate="{{item.id}}">{{item.category_name}}</view>
+      </scroll-view>
+
+    </view>
+    <view class='listitem bgnull' wx:if="{{goodsList.length == 0}}">
+      <text>没有更多商品~</text>
+    </view>
+    <view class='listitem' wx:if="{{goodsList.length > 0}}">
+      <view class='item' wx:if="{{goodsList.length > 0}}" bindtap="viewGoodsDetail" wx:for="{{goodsList}}" wx:for-item="item" data-id="{{item.gid}}" wx:key="item.gid">
+        <image class='real' wx:if="{{item.tags != ''}}" src='http://daoyin.datuhongan.com/Upload/62010.png'></image>
+        <view class='surpls'>仅剩: {{item.stock}}件</view>
+        <view class='goods-img'>
+          <image src='{{item.thumb_img}}' mode='widthFix'></image>
+        </view>
+        <view class='goods-name'>{{item.goods_name}}</view>
+        <view class='goods-price'>
+          <view class='real-price'>¥{{item.value}}</view>
+          <view class='dy-price'>
+            <view>
+              <image class='price-coin' src='../../images/coin.png'></image>
+              {{item.value}}
+            </view>
+            <view>免费兑换</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

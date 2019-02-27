@@ -1,0 +1,53 @@
+<!--pages/addAddress/addAddress.wxml-->
+
+<!-- 新增地址表单开始 -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="single-info">
+    <view class='info-title'>个人信息</view>
+
+    <view class='info-input'>
+      <view class="section__title">收货人姓名</view>
+      <input name="input" placeholder="请输入收货人姓名" value="{{userName}}" id="userName" bindinput="listenerInput"/>
+    </view>
+    <view class='partline'>
+      <view class='line'></view>
+    </view>
+    <view class='info-input'>
+      <view class="section__title">手机号码</view>
+      <input name="input" placeholder="请输入手机号码" value="{{phoneNumber}}" id="phoneNumber" bindinput="listenerInput"/>
+    </view>
+  </view>
+
+  <view class="del-info">
+    <view class='info-title'>收货信息</view>
+
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class='info-input'>
+        <view class="section__title">所属区域</view>
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </view>
+    </picker>
+
+    <view class='partline'>
+      <view class='line'></view>
+    </view>
+    <view class='info-input'>
+      <view class="section__title">详细地址</view>
+      <input name="input" placeholder="街道编号/楼牌地址/门牌" value="{{addressInfo}}" id="addressInfo" bindinput="listenerInput"/>
+    </view>
+  </view>
+
+  <view class='mo-setting'>
+    <checkbox bindtap="changeMo" />设为默认地址
+    <!-- <icon type="success" size="20" color="orange" />
+    <view class='mo-setting-text'><text> 设为默认地址</text></view> -->
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">保存</button>
+  </view>
+</form>
+<!-- 新增地址表单结束 -->

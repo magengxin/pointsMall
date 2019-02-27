@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.2",
+	"appid": "wx38fc3c61f7724314",
+	"projectname": "%E9%81%93%E9%9F%B3%E5%95%86%E5%9F%8E%E7%AC%AC%E4%BA%8C%E7%89%88",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "关注公众号测试",
+					"pathName": "pages/findSites/findSites",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "添加评价测试",
+					"pathName": "pages/addComment/addComment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录页测试",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "二维码入口",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

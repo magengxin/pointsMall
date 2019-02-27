@@ -1,0 +1,127 @@
+.find-sites{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.find-box{
+  width: 92%;
+  height: 38px;
+  margin: auto;
+  border-radius:  6px;
+  padding-top: 32px;
+}
+.find-box input{
+  width: 77%;
+  height: 100%;
+  float: left;
+  background-color: #F6F7F9;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  padding-left: 3%;
+  color: #000;
+}
+.find-box view{
+  width: 20%;
+  height: 100%;
+  float: left;
+  font-size: 13px;
+  /* background-color: #BC8A52; */
+  background:linear-gradient(to right, #f1c69b, #c48e59);
+  color: #fff;
+  line-height: 38px;
+  text-align: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.find-result{
+  margin-top: 32px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: #808080;
+  font-family: PingFangSC-Regular;
+}
+.find-result-num{
+  color: #C7925C;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: PingFangSC-Medium;
+}
+.sites-msg{
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden
+}
+.sites-list{
+  float: left;
+  /* width: 23%; */
+  padding: 0 6px;
+  box-sizing: border-box;
+  height: 32px;
+  margin-left: 7.75%;
+  border-radius: 20px;
+  background-color: #F2F3F5;
+  font-size: 12px;
+  color: #696969;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 7px
+}
+.result-tips{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.result-tips text{
+  display: block;
+  color: #beb8b8;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+}
+.happyImg{
+  margin-top: 33px;
+}
+.sadImg{
+  margin-top: 30px;
+
+}
+.result-tips image{
+  width: 36%;
+  height: 150px;
+  margin-bottom: 150px;
+}
+.focus{
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, #F9CA8F , #BC8952);
+  position: fixed;
+  /* font-weight: 600; */
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  font-family: PingFangSC-Light;
+}
+.find-false{
+  width: 100%;
+  margin-top: 55px;
+  text-align: center;
+  font-size: 12px;
+  color: #808080;
+
+}
+/* 关注按钮 */
+.focus-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.btn {
+  border-radius: none;
+  border: 0 none;
+  background: linear-gradient(to right, #F9CA8F , #BC8952);
+  color: #fff;
+}

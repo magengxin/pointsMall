@@ -1,0 +1,95 @@
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; *//* justify-content: center; *//* align-items: center; */
+}
+
+.mask-container {
+  width: 287px;
+  height: 305px;
+  background-image: url(https://daoyin.datuhongan.com/Upload/20190124/2.png);
+  background-size: 100% 100%;
+  /* background-size: cover; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+.m-wintip view {
+  text-align: center;
+}
+
+.m-wintip {
+  margin-top: 20px;
+}
+
+.m-close {
+  position: absolute;
+  top: 18%;
+}
+
+.m-close image {
+  width: 29px;
+  height: 29px;
+}
+
+.congratulations, .money {
+  height: 23px;
+}
+
+.congratulations {
+  margin-top: 35px;
+}
+
+.m-money {
+  margin-top: 8px;
+  height: 23px;
+}
+
+.congratulations text, .m-money text {
+  font-size: 22px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(139, 66, 255, 1);
+  line-height: 54px;
+  background: linear-gradient(45deg, rgba(122, 73, 47, 1) 0%, rgba(201, 125, 59, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.m-tips text {
+  font-size: 10px;
+  font-family: SourceHanSansCN-Regular;
+  font-weight: 400;
+  color: rgba(135, 89, 64, 1);
+  line-height: 54px;
+}
+
+.m-coin {
+  width: 100%;
+  height: 50px;
+}
+
+.m-coin image {
+  height: 100%;
+  width: 50px;
+}
+
+.m-use {
+  width: 130px;
+  height: 34px;
+  line-height: 34px;
+  background: linear-gradient(90deg, rgba(219, 178, 146, 1) 0%, rgba(248, 223, 196, 1) 100%);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 17px;
+  margin: 42px auto;
+  font-size: 13px;
+  font-family: PingFangSC-Regular;
+  color: rgba(120, 72, 47, 1);
+}
+

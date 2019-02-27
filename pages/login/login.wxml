@@ -1,0 +1,11 @@
+<!-- login -->
+<view class='login-container'>
+  <image src='https://daoyin.datuhongan.com/Upload/20190124/logobg.png' class='logobg'></image>
+  <view class='img'>
+    <image mode='widthFix' src='../../images/newlogo.png'></image>
+  </view>
+
+  <view class='login-btn x-center'>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+  </view>
+</view>

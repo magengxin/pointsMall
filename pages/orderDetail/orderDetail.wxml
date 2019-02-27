@@ -1,0 +1,123 @@
+<!-- 订单确认 order -->
+<view class='container'>
+  <!-- 引入过滤器 -->
+  <wxs module="dateFormat" src="../filter/dateFormat.wxs"></wxs>
+  <!-- 实物显示添加收货地址 -->
+  <!-- <view class='add-address' bindtap='addAddress' wx:if="{{hasAddress}}">
+    <view class='plus'>
+      <image src="../../images/plus.png"></image>
+    </view>
+    <view class='add' bindtap='addAddress'>
+      <text>添加收货地址</text>
+    </view>
+    <view class='arrow'>
+      <image src='../../images/rightarrow.png'></image>
+    </view>
+  </view> -->
+  <!-- 已有收货地址显示 -->
+  <view class='add-address' bindtap='addAddress'>
+    <view class='plus'>
+      <image src="../../images/newplus.png"></image>
+    </view>
+    <view class='add'>
+      <!-- 无地址显示 -->
+      <view class='add' wx:if="{{!hasAddress}}">
+        <text>添加收货地址</text>
+      </view>
+      <!-- 无地址end -->
+      <!-- 有地址显示 -->
+      <view class='recipient'  wx:if="{{hasAddress}}">
+        <text style='margin-right:15px'>收货人: {{address.recipient}}</text>
+        <text>{{address.tel}}</text>
+      </view>
+      <view class='address' wx:if="{{hasAddress}}">
+        <text>收货地址: </text><text style='margin-right:5px'>{{address.province}}</text><text style='margin-right:5px'>{{address.city}}</text><text style='margin-right:5px'>{{address.area}}</text><text>{{address.address}}</text>
+      </view>
+      <!-- 有地址end -->
+    </view>
+    <view class='arrow'>
+      <image src='../../images/rightarrow.png'></image>
+    </view>
+  </view>
+  <view class='order-info'>
+    <view class='info'>
+      <text>商品信息</text>
+    </view>
+    <view class='order-detail'>
+      <view class='order-img xy-flex-center'>
+        <view class='img-container xy-flex-center'>
+          <image wx:if="{{comefrom == ''}}" src='{{goods_infos.thumb_img}}'></image>
+          <image wx:if="{{comefrom == 'my'}}" src='{{order_infos.goods.thumb_img}}'></image>
+        </view>
+
+      </view>
+      <view class='order-name'>
+        <view wx:if="{{comefrom == ''}}">{{goods_infos.goods_name}}</view>
+        <view wx:if="{{comefrom == ''}}">￥{{goods_infos.value}}</view>
+        <view wx:if="{{comefrom == 'my'}}">{{order_infos.goods.goods_name}}</view>
+        <view wx:if="{{comefrom == 'my'}}">￥{{order_infos.deduction_amount}}</view>
+      </view>
+      <view class='order-num'>
+        <text>x1</text> </view>
+    </view>
+
+    <view class='order-bal'>
+      <text>现金抵扣</text>
+      <text wx:if="{{comefrom == ''}}">￥{{goods_infos.value}}</text>
+      <text wx:if="{{comefrom == 'my'}}">￥{{order_infos.deduction_amount}}</text>
+    </view>
+    <view class='order-post'>
+      <text>运费(含保险)</text>
+      <text wx:if="{{comefrom == ''}}">￥{{totalFee}}</text>
+      <text wx:if="{{comefrom == 'my'}}">￥{{order_infos.postal_amount}}</text>
+    </view>
+    <view class='order-pay'>
+      <text>实际支付</text>
+      <text wx:if="{{comefrom == ''}}">￥{{totalFee}}</text>
+      <text wx:if="{{comefrom == 'my'}}">￥{{order_infos.actual_amount}}</text>
+    </view>
+  </view>
+  <!-- 来自我的 确认支付不显示  订单信息显示-->
+  <!--  -->
+  <view class='my-order-info' wx:if="{{comefrom == 'my'}}">
+    <view class='my-order-detail'>
+      <view class='my-info-title'>
+        <text>订单信息</text> </view>
+      <view class='my-info-time'>
+        <view>订单编号：
+          <text>{{order_infos.local_order_no}}</text> </view>
+        <view>下单时间：
+          <text>{{dateFormat.detailTime(order_infos.order_create_time)}}</text> </view>
+        <view>支付时间：
+          <text>{{dateFormat.detailTime(order_infos.pay_request_time)}}</text> </view>
+      </view>
+    </view>
+  </view>
+  <!-- 确认订单按钮 -->
+  <view class='paynow' wx:if="{{comefrom == ''}}" bindtap='confirmOrder'>
+    <text>确认订单</text>
+  </view>
+  <!-- 来我的订单页  -->
+  <view class='confirm-info' wx:if="{{comefrom == 'my'}}">
+    <!-- <view  data-id="{{order_infos.id}}" bindtap='confirmGet' >确认收货</view> -->
+    <view data-id="{{order_infos.id}}" bindtap='confirmGet' wx:if="{{order_infos.order_status == 2 }}">确认收货</view>
+    <view data-id="{{order_infos.id}}" wx:if="{{order_infos.order_status == 7 }}" bindtap='goToComment'>评价</view>
+    <!-- <view   data-id="{{order_infos.id}}" wx:if="{{order_infos.order_status == 8 }}" bindtap='goToComment'>已完成</view> -->
+    <view wx:if="{{order_infos.order_status == 2 }}" data-id="{{order_infos.id}}" bindtap='viewLogistic'>查看物流</view>
+    <!-- <view class='btn-bgcol'wx:if="{{order_infos.order_status == 0}}">确认收货</view> -->
+    <view class='btn-bgcol' data-orderid="{{order_infos.id}}" wx:if="{{order_infos.order_status == 0 && order_infos.goods.type !=2}}" bindtap='payInDetail'>支付</view>
+    <view class='btn-bgcol' wx:if="{{order_infos.order_status == 0}}" bindtap='cancelOrder' data-orderId="{{order_infos.id}}">取消订单</view>
+  </view>
+  <!-- 郑重承诺 -->
+  <view class='promise'>
+    <view class='title xy-flex-center'>
+      <view class='line'></view>
+      <view class='subtitle'>道音传媒郑重承诺</view>
+      <view class='line'></view>
+    </view>
+    <view class='promise-tips'>
+       • 道音传媒正在推广阶段所有商品均和市场价格相同，
+大家可随意查询绝无欺诈
+    </view>
+  </view>
+</view>

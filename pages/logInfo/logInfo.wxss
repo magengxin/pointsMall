@@ -1,0 +1,147 @@
+.top-goods {
+  height: 70px;
+  background-color: #fff;
+  margin:12px;
+  display: flex;
+}
+.top {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.pic {
+  width: 20%;
+}
+
+.pic image {
+  width: 73px;
+  height: 73px;
+}
+
+.loginfo {
+  width: 80%;
+}
+
+.company, .no {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}
+
+.company view, .no view {
+  height: 16px;
+  line-height: 16px;
+}
+
+.company text, .no text {
+  margin-left: 10px;
+}
+
+.company text:nth-child(2) {
+  color: #c69160;
+}
+
+.no text:nth-child(2) {
+  color: #bfbfbf;
+}
+
+.loginfo {
+  display: flex;
+  align-items: center;
+}
+
+.loginfo view {
+  width: 100%;
+}
+
+.no {
+}
+
+.no .btn {
+  width: 40px;
+  line-height: 16px;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(26, 26, 26, 1);
+  padding: 0 10px;
+  background-color: transparent;
+  margin-left: 31px;
+  border: 1px solid #666;
+}
+
+.bottom-log {
+  margin-top: 8px;
+  /* height: 200px; */
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+
+.detail {
+  margin: 8px 12px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  line-height:30px;
+  color: rgba(26, 26, 26, 1);
+  border-bottom: 1px solid #ededed;
+}
+.info {
+  display: flex;
+  margin-top: 30px;
+}
+.day, .process {
+  font-size:14px;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color: #808080;
+}
+.active {
+  color:rgba(198,145,96,1);
+}
+.step .info:nth-child(1)  text{
+  color:rgba(198,145,96,1);
+}
+.times,.arrive {
+  font-size:10px;
+font-family:PingFangSC-Regular;
+font-weight:400;
+/* color:rgba(198,145,96,1); */
+color: #808080;
+}
+.center {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center image {
+  width:6px;
+  height: 6px;
+}
+.left view, .right view {
+  /* height: 16px;
+  line-height: 16px; */
+}
+.left {
+  width: 17%;
+}
+.center {
+  width: 5%;
+}
+.right {
+  width: 78%;
+}
+.noLogs {
+  /* height: 100%; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}

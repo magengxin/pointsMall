@@ -1,0 +1,14 @@
+<view class='ruler-container' bindtap='preventScroll'>
+  <view class='ruler-content'>
+   <image class='close' bindtap='closeRuler' src='https://daoyin.datuhongan.com/Upload/20190124/closemask.png'></image>
+    <view class='ruler'>
+      活动规则 <image class='coin' src="../../../images/coin.png"></image>
+    </view>
+    <view class='ruler-item'>1.新用户扫码可得100道音币</view>
+    <view class='ruler-item'>2.分享朋友点赞,点赞成功后,双方都可获得道音币</view>
+    <view class='ruler-item'>3.每日签到可获得道音币</view>
+    <view class='ruler-item'>4.商城商品支持市场价查询</view>
+    <view class='ruler-item'>5.同件商品一个用户只能购买一次</view>
+    <view class='ruler-item'>6.规则最终解释权归道音传媒所有</view>
+  </view>
+</view>

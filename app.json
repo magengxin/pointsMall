@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goodsDetail/goodsDetail",
+    "pages/order/order",
+    "pages/addressManage/addressManage",
+    "pages/couponDetail/couponDetail",
+    "pages/mine/mine",
+    "pages/orderDetail/orderDetail",
+    "pages/couponList/couponList",
+    "pages/balance/balance",
+    "pages/addAddress/addAddress",
+    "pages/login/login",
+    "pages/goodsList/goodsList",
+    "pages/signin/signin",
+    "pages/couponPurchase/couponPurchase",
+    "pages/sharingPoints/sharingPoints",
+    "pages/logInfo/logInfo",
+    "pages/commentsList/commentsList",
+    "pages/addComment/addComment",
+    "pages/searchStation/searchStation",
+    "pages/allSites/allSites",
+    "pages/findSites/findSites",
+    "pages/outerLink/outerLink"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "道音传媒",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "selectedColor": "#C1864C",
+    "borderStyle": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/t1.png",
+        "selectedIconPath": "images/t1a.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/searchStation/searchStation",
+        "iconPath": "images/t2.png",
+        "selectedIconPath": "images/t2a.png",
+        "text": "全部分类"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/t3.png",
+        "selectedIconPath": "images/t3a.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+<!-- 订单确认 order -->
+<view class='container'>
+  <!-- 实物显示添加收货地址 -->
+  <view class='add-address'>
+    <view class='plus'>
+      <image src="../../images/plus.png"></image>
+    </view>
+    <view class='add' bindtap='addAddress'>
+      <text>添加收货地址</text> </view>
+    <view class='arrow'>
+      <image src='../../images/rightarrow.png'></image>
+    </view>
+  </view>
+  <view class='order-info'>
+    <view class='info'>
+      <text>商品信息</text>
+    </view>
+    <view class='order-detail'>
+      <view class='order-img xy-flex-center'>
+        <view class='img-container xy-flex-center'>
+          <image src='../../images/vipkid.png'></image>
+        </view>
+
+      </view>
+      <view class='order-name'>
+        <view>优惠券</view>
+        <view>￥200</view>
+      </view>
+      <view class='order-num'>
+        <text>x11</text> </view>
+    </view>
+
+    <view class='order-bal'>
+      <text>现金抵扣</text>
+      <text>￥11</text>
+    </view>
+    <view class='order-post'>
+      <text>运费(含保险)</text>
+      <text>￥11</text>
+    </view>
+    <view class='order-pay'>
+      <text>实际支付</text>
+      <text>￥11</text>
+    </view>
+  </view>
+  <view class='paynow'>
+    <text>确认订单</text>
+  </view>
+</view>

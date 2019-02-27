@@ -1,0 +1,125 @@
+/* pages/components/comment/comment.wxss */
+
+.x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 评价轮播 */
+
+.com-slider {
+  height: 160px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  bottom: 6px;
+  width: 90%;
+}
+
+.com-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.com-left, .com-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.more-com {
+  width: 7px;
+  height: 11px;
+}
+
+.line {
+  width: 3px;
+  height: 11px;
+  background-color: #bc8a51;
+}
+
+.com-detail {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-left: 4px;
+}
+
+.view-more {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 4px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 4px;
+}
+
+.com-person {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nickname {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(154, 154, 154, 1);
+}
+
+.content {
+  margin-top: 2px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(74, 74, 74, 1);
+}
+
+.com-imgs {
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.com-imgs view {
+  margin-left: 5px;
+  width: 25%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.com-imgs view image {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.com-content {
+  height: 100%;
+}
+
+.com-imgs view:nth-child(1) {
+  margin-left: 0;
+}
+
+/* 评价轮播end */

@@ -1,0 +1,53 @@
+<!--pages/addressManage/addressManage.wxml-->
+
+<!-- 显示收货地址列表开始 -->
+<!-- 遍历收货地址 -->
+<!-- <view class="mo-address" wx:for="{{addressList}}" wx:key="{{item}}" wx:if="{{addressList[0].id}}"> -->
+<view style='padding-bottom:46px;'>
+<view class="mo-address" wx:for="{{addressList}}" wx:key="{{item}}">
+  <block>
+    <view class='address_total'>
+      <!-- <view class='address_left'>
+        <icon class='selsec_ionic' wx:if="{{item.selsecType==0}}" type="success" color="#ed3b32" bindtap="selectList" data-index="{{index}}" />
+        <icon class='selsec_ionic' wx:else type="circle" bindtap="selectList" data-index="{{index}}" />
+      </view> -->
+      <view class='address_center'>
+        <view class="address-text-name">{{item.recipient}}
+          <text class='mo-text' wx:if="{{item.status==1}}">默认</text>
+          <text class='addresss_tel'>{{item.tel}}</text>
+        </view>
+        <view class="address-text-content">{{item.province}} {{item.city}} {{item.area}} {{item.address}}</view>
+      </view>
+
+    </view>
+    <view class='address_right'>
+      <view class='fr' data-index="{{index}}" >
+        <!-- <text class='fr' data-index="{{index}}">编辑</text> -->
+         <image class='fr' bindtap='editorAdress' data-index="{{item.id}}" src='/images/editor.png'></image> 
+      </view>
+      <view class='fr' data-index="{{item.id}}">
+        <!-- <text class='fr' data-index="{{index}}">删除</text> -->
+         <image class='fr'  bindtap='delAdress' data-index="{{item.id}}" src='/images/delet.png'></image> 
+      </view>
+      <view class='fr' style='margin-top:6px;border:1px solid #eee;padding:3px 10px;color:#333' bindtap='goBackOrder' data-address="{{item}}">
+        <text class='fr'>使用此地址</text>
+         <!-- <image class='fr' data-index="{{index}}" src='/images/editor.png'></image>  -->
+      </view>
+    </view>
+
+  </block>
+</view></view>
+
+<!-- 显示收货地址列表结束 -->
+<view wx:if='{{addressList.length == 0}}' class='no_address'>
+    <text>暂无收货地址</text>
+</view>
+<navigator class="btn-area"  url='/pages/addAddress/addAddress?wxaddress=1'>
+  <button formType="submit" style='background-color: #999999'>使用微信地址</button>
+</navigator>
+<!-- <view class="btn-area" url='/pages/addAddress/addAddress'>
+  <button bindtap='saveInfo' style='right:0;'>新增收货地址</button>
+</view> -->
+<navigator class="btn-area" url='/pages/addAddress/addAddress'>  
+  <button formType="submit" style='right:0;background-color: #bda377'>+新增收货地址</button>
+</navigator>

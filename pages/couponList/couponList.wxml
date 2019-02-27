@@ -1,0 +1,83 @@
+<view class='mall-container'>
+  <view class='mall-banner'>
+    <image src='../../images/mybanner.png'></image>
+    <!-- 计时器 -->
+    <view class='interval xy-center'>
+      <view class='time-inter'>
+        <view class='out-circle'>
+          10:00
+        </view>
+
+      </view>
+      <view class='round-circle' animation="{{animationData}}">
+        <view class='small-circle'>
+        </view>
+      </view>
+    </view>
+    <view class='mall-balance xy-center'>
+      余额
+      <text>￥8212</text>
+    </view>
+    <!-- 定时器结束 -->
+  </view>
+
+  <!-- 优惠券 -->
+  <view class='mall-coupon'>
+    <view class='mall-coupon-title'>
+      <view class='xy-center'>优惠券</view>
+      <view class='more' bindtap='goCoupons'>
+        查看更多
+        <image class='y-center' src='../../images/redarrow.png'></image>
+      </view>
+    </view>
+
+    <view class='list'>
+      <view class='item'>
+        <view class='pic xy-flex-center'>
+          <image src='../../images/vipkid.png'></image>
+        </view>
+        <view class='detail'>
+          <view>VIPKID少儿在线英语优惠券</view>
+          <view class='sub-title'>副标题</view>
+          <view>￥9</view>
+        </view>
+        <view class='buy-btn xy-flex-center btn-bgcol' bindtap='goDetail'>
+          <view class='btn btn-bgcol'>
+            <text>换取</text>
+          </view>
+        </view>
+        <!-- 上下三角 -->
+        <view class='up-sj'>
+          <text></text>
+        </view>
+        <view class='down-sj'>
+        </view>
+        <!-- 上下三角 -->
+      </view>
+      <view class='item'>
+        <view class='pic xy-flex-center'>
+          <image src='../../images/vipkid.png'></image>
+        </view>
+        <view class='detail'>
+          <view>VIPKID少儿在线英语优惠券</view>
+          <view class='sub-title'>副标题</view>
+          <view>￥9</view>
+        </view>
+        <view class='buy-btn xy-flex-center btn-bgcol'>
+          <view class='btn btn-bgcol' bindtap='goMall'>
+            <text>换取</text>
+          </view>
+        </view>
+        <!-- 上下三角 -->
+        <view class='up-sj'>
+          <text></text>
+        </view>
+        <view class='down-sj'>
+        </view>
+        <!-- 上下三角 -->
+      </view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,475 @@
+.mall-container {
+}
+.mall-banner {
+  position: relative;
+  height: 280px;
+}
+.mall-banner image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mall-balance {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  top: 23%;
+}
+.mall-balance text {
+  font-size: 45px;
+  font-family: Impact;
+  font-weight: 700;
+  color: rgba(255, 224, 175, 1);
+  background: linear-gradient(180deg, rgba(255, 225, 176, 1) 0%, rgba(230, 176, 106, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mall-balance .small-tip {
+  font-size: 11px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 224, 175, 1);
+}
+
+.mall-swiper {
+  height: 162px;
+}
+
+.mall-swiper .slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.mall-recommend {
+  background-color: #fff;
+}
+
+.mall-coupon-title {
+  color: #fff;
+  width: 162px;
+  height: 30px;
+  text-align: center;
+  /* background-color: red; */
+  top: -15px;
+  border-radius: 15px;
+  background: #352323;
+  border: 2px solid #e4b281;
+}
+
+.mall-recommend-list {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.item-img {
+  position: relative;
+}
+
+.lock-img {
+  position: absolute;
+  z-index: 9;
+}
+
+.list-item .item-img {
+  width: 30%;
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+  /* background-color: #f5f5f5; *//* background-color: red; */
+}
+
+.list-item .item-img image {
+  width: 92px;
+  height: 92px;
+}
+
+.list-item .item-info {
+  width: 70%;
+  /* background-color: cyan; */
+}
+
+.item-info {
+  padding-left: 8px;
+}
+
+.item-info  view {
+  font-size: 15px;
+  color: #222;
+}
+
+.item-info  view:nth-child(2) {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin: 6px 0 18px 0;
+}
+
+.item-info  view:nth-child(3) {
+  font-size: 16px;
+  color: #333430;
+}
+
+.mall-coupon-title {
+  height: 30px;
+  font-size: 14px;
+  position: absolute;
+  z-index: 100;
+}
+
+.more {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 70px;
+  font-size: 11px;
+  height: 30px;
+  line-height: 30px;
+  color: #808080;
+}
+
+.more image {
+  width: 15px;
+  height: 15px;
+  right: 0;
+  margin-left: 10px;
+}
+
+.mall-coupon {
+  margin-top: 26px;
+  position: relative;
+  /* width: 97%; */
+}
+
+.mall-coupon-list {
+  background-color: #f5f5f5;
+  /* margin: 10px 6px 0 6px; */
+  padding: 6px;
+  width: 97%;
+  margin:0 auto;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgba(76, 76, 76, 1) 0%, rgba(48, 48, 48, 1) 100%);
+  border-radius: 12px;
+}
+
+.mall-coupon-listitem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.list-left {
+  position: relative;
+  overflow: hidden;
+}
+
+.lock-img {
+  position: absolute;
+  height: 100%;
+  z-index: 99;
+}
+
+.list-left-img {
+  background-color: #f5f5f5;
+  height: 150px;
+  width: 150px;
+  /* padding: 10px; */
+  box-sizing: border-box;
+  margin: 6px auto;
+  /* margin-bottom: 6px; */
+}
+
+.valueBtn {
+  padding-left: 10px;
+  margin-top: 6px;
+}
+
+.mall-coupon-listitem .list-left {
+  height: 220px;
+  width: 49%;
+  background-color: #fff;
+  /* padding: 6px; */
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  /* -webkit-box-shadow: 0px 3px 3px rgba(20,10,20,.5);
+  -moz-box-shadow: 0px 3px 3px rgba(10,16,20,.5);
+  box-shadow: 0px 3px 3px rgba(10,16,20,.5);
+  margin-top: 10px; */
+}
+
+.list-left {
+  position: relative;
+  height: 250px;
+}
+
+.mall-coupon-listitem .list-left image {
+  width: 100%;
+  height: 100%;
+}
+
+.mall-coupon-name {
+  font-size: 13px;
+  color: #333;
+}
+
+.mall-coupon-price {
+  position: absolute;
+  bottom: 8px;
+  font-size: 11px;
+  color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 0;
+  margin-top: 10px;
+  font-size: 11px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* x新版本样式x */
+
+.new-tips {
+  /* background: #fff; */
+  color: #f01;
+  position: absolute;
+  top: 56%;
+  width: 80%;
+}
+
+.new-tips view {
+  text-align: center;
+}
+
+.new-tips .new-money .huode {
+  font-size: 22px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 225, 175, 1);
+  background: linear-gradient(180deg, rgba(255, 225, 176, 1) 0%, rgba(230, 176, 106, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.new-tips .new-money .getnum {
+  font-size: 30px;
+  font-family: PingFangSC-Regular;
+  font-weight: 700;
+  color: rgba(255, 225, 175, 1);
+  background: linear-gradient(180deg, rgba(255, 225, 176, 1) 0%, rgba(230, 176, 106, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.new-tips .goplay {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.getfree {
+  margin-top: 10px;
+}
+
+.getfree button {
+  border-radius: 20px;
+  /* padding: 0 10px; */
+  box-sizing: border-box;
+  height: 34px;
+  line-height: 34px;
+  border: 0 none;
+  background: linear-gradient(90deg, #f0c59a, #c7925c);
+  font-size: 13px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 65%;
+}
+
+/* swiper */
+
+.goods-swiper {
+  background-color: #1a0e00;
+  text-align: center;
+  padding: 0 0 30px 0;
+  box-sizing: border-box;
+  height: 168px;
+}
+
+.list-left .goods-pic {
+  height: 76%;
+  background: linear-gradient(to bottom, #f0dbcf, #fffdfd);
+}
+
+/* 优惠券渐变色 */
+
+.list-left .goods-coupon {
+  height: 70%;
+  background: linear-gradient(to bottom, #efd0d8, #fffdfd);
+}
+
+.list-left .goods-name {
+  height: 24%;
+  padding-top: 4px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #e4b675 5%, #bc8952 95%);
+}
+
+.goods-name text {
+  font-size: 13px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.goods-price {
+  width: 140px;
+  height: 27px;
+  position: absolute;
+  background-color: #483e33;
+  border-radius: 18.5px;
+  font-size: 18px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(255, 231, 178, 1);
+  text-align: center;
+  bottom: 40px;
+}
+
+.goods-stock {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.goods-stock text {
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  background-color: #f6ece6;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+
+/* 新版本样式 */
+
+.sign {
+  height: 144px;
+  /* background-color: cyan; */
+  position: relative;
+}
+
+.sign-bg {
+  background: linear-gradient(to right, #d6a976, #bc8952);
+  height: 60%;
+}
+
+.sign-day {
+  height: 96%;
+  background-color: #1e1a17;
+  width: 97%;
+  position: absolute;
+  border-radius: 6px;
+  top: 10px;
+}
+
+.everyday, .signmore {
+  text-align: center;
+  color: #fff;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  /* margin-top: 1px; */
+}
+
+.everyday {
+  font-size: 12px;
+  margin-top: 9px;
+  /* margin-bottom: 2px; */
+}
+
+.signmore {
+  font-size: 10px;
+  font-family: PingFangSC-Light;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  /* margin-top: 4px; */
+  /* margin-bottom: 4px; */
+}
+.dosign {
+  /* padding: 0px 10px; */
+  box-sizing: border-box;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.slide-container {
+   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* position: absolute; */
+  position: relative;
+  /* background-color: red; */
+  /* height: 25px; */
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.sign-line {
+  position: absolute;
+  height: 25px;
+  /* background-color: red; */
+  width: 95%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  /* z-index: 888; */
+  /* top: 0px; */
+}
+.sign-line image {
+  height: 1px;
+  width: 100%;
+}
+
+.dosign .days {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #D3A266;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #fff;
+  position: relative;
+}
+.sin-active {
+
+}
+.days image {
+  width: 100%;
+  height: 100%;
+}
+.sign-btn {
+  text-align: center;
+}
+.sign-btn button {
+  width: 32%;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  background: linear-gradient(to right, #d6a976, #bc8952);
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+}

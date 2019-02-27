@@ -1,0 +1,37 @@
+<!--pages/components/comment/comment.wxml-->
+
+<!-- 评价轮播 -->
+<view class='com-slider x-center' wx:if="{{recommendComments.length > 0}}">
+  <!-- 评价内容 -->
+  <view class='com-content'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{recommendComments}}" wx:for-item="item" wx:key="item">
+        <swiper-item>
+          <!-- <image src="{{item}}" class="slide-image" width="100%" height="100%" mode='widthFix' /> -->
+          <view class='com-container'>
+            <view class='com-person'>
+              <view class='avatar-container'>
+                <image class='avatar' src='{{item.avatarUrl}}' mode='widthFix'></image>
+              </view>
+              <view class='nickname'>
+                <text>{{item.nickName}}</text>
+              </view>
+            </view>
+            <view class='content multiLineTextOver'>
+              {{item.content}}
+            </view>
+            <view class='com-imgs'>
+              <view wx:for="{{item.imgs}}" wx:for-item="img" wx:key="img">
+                <image src='{{img}}'></image>
+              </view>
+
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 评价内容end -->
+
+</view>
+<!-- 评价轮播end -->

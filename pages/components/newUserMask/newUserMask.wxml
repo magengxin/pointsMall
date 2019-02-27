@@ -1,0 +1,8 @@
+<view class='newUserMask' catchtouchmove='preventScroll'>
+  <view class='container'>  
+   <image class='close' bindtap='closeNewMask' src='https://daoyin.datuhongan.com/Upload/20190124/closemask.png'></image>
+  </view>
+  <view class="userBtn" bindtap='closeNewMask'>
+    立即使用
+  </view>
+</view>

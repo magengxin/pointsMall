@@ -1,0 +1,216 @@
+<!-- index.wxml -->
+<!-- <button open-type='contact'>客服</button> -->
+<view class='mall-container'>
+  <!-- 中奖提示组件 -->
+  <my-mask bindcloseMask="closeMask" wx:if="{{showMask}}">
+    <view class='m-wintip'>
+      <!-- slot子节点 也可放组件内部-->
+      <view class='congratulations'>
+        <text wx:if="{{ifWin}}">恭喜你</text>
+        <text wx:if="{{!ifWin}}">很遗憾</text>
+      </view>
+      <!-- <view class="m-money"> -->
+      <view class="m-money">
+        <text wx:if="{{ifWin}}">获得{{points}}道音金币</text>
+        <text wx:if="{{!ifWin}}" style='font-size:13px;'>玩其他游戏试试手气吧!</text>
+      </view>
+      <view class='m-tips'>
+        <text>{{wintip}}</text>
+      </view>
+      <view class='m-coin'>
+        <image src='../../images/coin.png'></image>
+      </view>
+      <view class="m-use" bindtap="closeMask" wx:if="{{ifWin}}">
+        立即使用
+      </view>
+      <view class="m-use" bindtap="closeMask" wx:if="{{!ifWin}}">
+        浏览商城
+      </view>
+    </view>
+    <!-- slot子节点 -->
+  </my-mask>
+  <!-- 中奖提示组件end -->
+
+  <!-- 新用户弹框组件 -->
+  <my-spring wx:if="{{showNewUserMask}}" bindcloseNewMask="closeNewMask"></my-spring>
+  <!-- 新用户弹框组件end -->
+
+  <!-- 规则弹框组件 -->
+  <my-ruler wx:if="{{showRulerMask}}" bindcloseRulerMask="closeRulerMask"></my-ruler>
+  <!-- 规则弹框组件end -->
+
+  <!-- 点赞组件 -->
+  <view class='helps'>
+    <my-help bindgoHelp="goHelp"></my-help>
+  </view>
+  <!-- 点赞组件end -->
+
+  <!-- 新版banner -->
+  <view class='index-banner'>
+    <view class='banner-top'>
+    <image src='../../images/sign.png' class='signbtn' bindtap='gotoSign'></image>
+      <!-- 垂直轮播图和签到 -->
+      <view class="signin">
+        <view class='check'>
+          <swiper style='height:100%;' indicator-dots="{{head_indicatorDots}}" autoplay="{{head_autoplay}}" vertical="{{vertical}}" interval="{{head_interval}}" duration="{{head_duration}}">
+            <block wx:for="{{records}}" style='height:100%;' wx:for-item="item" wx:key="item">
+              <!-- <swiper-item style='height:100%'> -->
+              <swiper-item>
+                <view class='commonTextOver'>{{item}}</view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+        <view>
+          <view class='daysign'>
+            <view class="y-flex-center">
+              <image src='../../images/customer.png'></image>
+            </view>
+            <view class="y-flex-center customer">
+              <button open-type='contact' ></button>
+            </view>
+          </view>
+
+        </view>
+
+      </view>
+      <!-- 垂直轮播图和签到end -->
+      <!-- ======= -->
+      <!-- 道音金币 -->
+      <view class="dyb x-flex-center">
+        <view class='coin y-flex-center'>
+          <image src='../../images/coin.png' mode="widthFix"></image>
+        </view>
+        <view class='money'>
+          <view>
+            <text>道音金币</text>
+          </view>
+          <view class='balance'>
+            <text>{{balance}}</text>
+            <!-- <text>897987987</text> -->
+            <view class='rulers' bindtap='viewRulers'>
+              查看规则
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 道音金币end -->
+    </view>
+  </view>
+  <!-- 新版end -->
+
+  <!-- 新春豪礼 -->
+  <view class="spring">
+    <my-comment/>
+  </view>
+  <!-- 新春豪礼end -->
+
+  <!-- 推荐 -->
+  <view class='mall-coupon'>
+    <view class='mall-coupon-title x-center'>
+      <view class='recommend xy-center'>推荐</view>
+    </view>
+    <view class='mall-coupon-list'>
+      <view class="mall-coupon-listitem">
+        <view class='listitem'>
+          <view class="item {{item.type ==2 ? 'item-coupon':''}}" wx:for="{{recommendList}}" wx:for-item="item" data-id="" wx:key="item.gid" bindtap='viewGoodsDetail' data-gid="{{item.gid}}">
+            <image class='real' wx:if="{{item.tags !=''}}" src='http://daoyin.datuhongan.com/Upload/62010.png'></image>
+            <view class='surpls'>仅剩: {{item.stock}}件</view>
+            <view class='goods-img'>
+              <image src='{{item.thumb_img}}' mode='widthFix'></image>
+            </view>
+            <view class='goods-name'>{{item.goods_name}}</view>
+            <view class='goods-price'>
+              <view class='real-price'>¥{{item.value}}</view>
+              <!-- <view class='real-price'>¥99999</view> -->
+              <view class='dy-price'>
+                <view>
+                  <image class='price-coin' src='../../images/coin.png'></image>
+                  {{item.value}}
+                </view>
+                <view>免费兑换</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 推荐end -->
+
+  <!-- 优惠券 -->
+  <!-- <view class='mall-coupon'> -->
+  <view class='mall-coupon' wx:if="{{couponList.length != 0}}">
+    <view class='mall-coupon-title x-center'>
+      <view class='xy-center'>优惠券</view>
+
+    </view>
+    <view class='more' data-goodsType='2' bindtap='viewMore'>
+      查看更多
+      <image class='y-center' src='../../images/redarrow.png'></image>
+    </view>
+    <view class='mall-coupon-list'>
+      <view class="mall-coupon-listitem">
+        <view class='listitem'>
+          <view class='item item-coupon' wx:for="{{couponList}}" wx:for-item="item" data-id="" wx:key="item.gid" bindtap='viewGoodsDetail' data-gid="{{item.gid}}">
+            <image class='real' wx:if="{{item.tags !=''}}" src='http://daoyin.datuhongan.com/Upload/62010.png'></image>
+            <view class='surpls'>仅剩: {{item.stock}}件</view>
+            <view class='goods-img'>
+              <image src='{{item.thumb_img}}' mode='widthFix'></image>
+            </view>
+            <view class='goods-name'>{{item.goods_name}}</view>
+            <view class='goods-price'>
+              <view class='real-price'>¥{{item.value}}</view>
+              <view class='dy-price'>
+                <view>
+                  <image class='price-coin' src='../../images/coin.png'></image>
+                  {{item.value}}
+                </view>
+                <view>免费兑换</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+  </view>
+  <!-- 优惠券end -->
+
+  <!-- 商品 -->
+  <view class='mall-goods'>
+    <view class='mall-coupon-title x-center'>
+      <view class='xy-center'>商品</view>
+    </view>
+    <view class='mall-coupon-list'>
+      <view class="mall-coupon-listitem">
+        <view class='more' bindtap='viewMore' data-goodsType='1'>
+          查看更多
+          <image class='y-center' src='../../images/redarrow.png'></image>
+        </view>
+        <view class='listitem'>
+          <view class='item' wx:for="{{goodsList}}" wx:for-item="item" wx:key="item.gid" bindtap='viewGoodsDetail' data-info="{{item}}" data-gid="{{item.gid}}">
+            <image class='real' wx:if="{{item.tags !=''}}" src='http://daoyin.datuhongan.com/Upload/62010.png'></image>
+            <view class='surpls'>仅剩: {{item.stock}}件</view>
+            <view class='goods-img'>
+              <image src='{{item.thumb_img}}' mode='widthFix'></image>
+            </view>
+            <view class='goods-name'>{{item.goods_name}}</view>
+            <view class='goods-price y-flex-center'>
+              <view class='real-price'>¥{{item.value}}</view>
+              <view class='dy-price'>
+                <view>
+                  <image class='price-coin' src='../../images/coin.png'></image>
+                  {{item.value}}
+                </view>
+                <view>免费兑换</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 商品end -->
+</view>

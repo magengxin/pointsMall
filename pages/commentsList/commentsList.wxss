@@ -1,0 +1,108 @@
+.all-coments {
+    overflow: hidden;
+    /* background-color: red; */
+  }
+  .all-coments .com-item:nth-child(1) {
+    margin-top: 0;
+  }
+  .com-item {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: #fff;
+  }
+  
+  .com-person {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px 0 10px;
+    /* margin-top: 4px; */
+    box-sizing: border-box;
+  }
+  
+  .useravatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .useravatar image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .username {
+    margin-left: 4px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+  }
+  
+  .com-time {
+    font-size: 10px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(128, 128, 128, 1);
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .com-content {
+    font-size: 12px;
+    margin-top: 4px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(74, 74, 74, 1);
+  }
+  
+  .com-imgs {
+    display: flex;
+    padding: 5px 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  .com-imgs view {
+    width: 25%;
+  }
+  .com-imgs image {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+  }
+  .com-imgs view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    width: 85px;
+    height: 85px;
+  }
+  .com-imgs view:nth-child(1) {
+    margin-left: 0;
+  }
+  .com-imgs view:nth-child(1) {
+    margin-left: 0;
+  }
+  
+  .com-official {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(122, 122, 122, 1);
+    background-color: #fafafa;
+    /* margin-top: 10px; */
+  }
+  
+  .official {
+    font-size: 10px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(188, 138, 82, 1);
+  }
+  

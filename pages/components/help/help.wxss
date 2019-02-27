@@ -1,0 +1,10 @@
+/* 组件的css */
+.help {
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 72%;
+}
+.help image {
+  width: 95px;
+}

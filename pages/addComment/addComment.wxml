@@ -1,0 +1,31 @@
+<view class='addComment'>
+  <view class='goods-info'>
+    <view class='goods-img'>
+      <image src='{{goods_img}}' mode='widthFix'></image>
+    </view>
+    <view class='goods-name'>{{goods_name}}</view>
+  </view>
+  <!--  -->
+  <view class="comment-pics">
+    <textarea placeholder-style="font-size:12px;" bindinput="textChange" auto-focus="true" placeholder='商品满足你的期待吗?说说他的优点和美中不足的地方吧!' maxlength="140"></textarea>
+    <view class='preview-image'>
+      <!-- 上传的图片 -->
+      <view wx:for="{{imgUrls}}"  class='uploadContainer' wx:for-item="item" wx:for-index="idx" wx:key="item">
+      <view class='del-container'> <image class='delimg' data-idx="{{idx}}" bindtap='delUploadImg' src='https://daoyin.datuhongan.com/Upload/20190124/del.png'></image></view>
+        <image src='{{item}}' class='uploads'></image>
+      </view>
+      <view class='upload-icon' bindtap='uploadImage'>
+        <image src='https://daoyin.datuhongan.com/Upload/20190124/camera.png' mode='widthFix'></image>
+      </view>
+    </view>
+    <view class='uploadCom'>
+      
+      <view class='limit'>
+        <text>{{hasUploadLength}}</text>/{{maxUploadLength}}</view>
+    </view>
+  </view>
+  <view class="x-flex-center">
+    <button bindtap='onSubmit' class='submitComment'>提交评价</button>
+  </view>
+
+</view>

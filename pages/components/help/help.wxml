@@ -1,0 +1,3 @@
+<view bindtap='goHelp' class='help'>
+  <image src='https://daoyin.datuhongan.com/Upload/20190124/help.png'  mode='widthFix'></image>
+</view>

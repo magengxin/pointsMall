@@ -1,0 +1,42 @@
+/* pages/allSites/allSites.wxss */
+
+.sites {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.provice {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.province-list {
+  margin-top: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.city {
+  width: 100%;
+}
+
+.city-site {
+  height: 30px;
+  /* width: 17%; */
+  padding: 0 10px;
+  margin-left: 2.5%;
+  font-size: 10px;
+  float: left;
+  background-color: #f2f3f5;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  border-radius: 20px;
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
